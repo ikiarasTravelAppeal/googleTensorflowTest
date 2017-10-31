@@ -102,4 +102,4 @@ with tf.Session() as sess:
     plt.plot(size_data_n, sess.run(W) * size_data_n + sess.run(b), label='Fitted line')
     plt.legend()
 
-    plt.show()
+    plt.savefig()
