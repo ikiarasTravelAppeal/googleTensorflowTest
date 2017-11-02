@@ -57,7 +57,7 @@ learning_rate = 0.1
 training_iteration = 200
 
 # Construct a linear model
-model = tf.add(tf.mul(X, W), b)
+model = tf.add(tf.multiply(X, W), b)
 
 # Minimize squared errors
 cost_function = tf.reduce_sum(tf.pow(model - Y, 2)) / (2 * samples_number)  # L2 loss
@@ -102,4 +102,4 @@ with tf.Session() as sess:
     plt.plot(size_data_n, sess.run(W) * size_data_n + sess.run(b), label='Fitted line')
     plt.legend()
 
-    plt.savefig()
+    plt.savefig("plotSample")
