@@ -1,6 +1,6 @@
 import tensorflow as tf
 import numpy
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 # Train a data set
 
@@ -36,9 +36,9 @@ size_data_test_n = normalize(size_data_test)
 price_data_test_n = normalize(price_data_test)
 
 # Display a plot
-plt.plot(size_data, price_data, 'ro', label='Samples data')
-plt.legend()
-plt.draw()
+# plt.plot(size_data, price_data, 'ro', label='Samples data')
+# plt.legend()
+# plt.draw()
 
 samples_number = price_data_n.size
 
@@ -96,10 +96,10 @@ with tf.Session() as sess:
     "Testing data cost:", testing_cost
 
     # Display a plot
-    plt.figure()
-    plt.plot(size_data_n, price_data_n, 'ro', label='Normalized samples')
-    plt.plot(size_data_test_n, price_data_test_n, 'go', label='Normalized testing samples')
-    plt.plot(size_data_n, sess.run(W) * size_data_n + sess.run(b), label='Fitted line')
-    plt.legend()
-
-    plt.savefig("plotSample")
+    # plt.figure()
+    # plt.plot(size_data_n, price_data_n, 'ro', label='Normalized samples')
+    # plt.plot(size_data_test_n, price_data_test_n, 'go', label='Normalized testing samples')
+    # plt.plot(size_data_n, sess.run(W) * size_data_n + sess.run(b), label='Fitted line')
+    # plt.legend()
+    #
+    # plt.savefig("plotSample")
